@@ -2,124 +2,126 @@ body {
   margin: 0;
   background-color: #086375;
   color: #AFFC41;
-  font-family: 'Open Sans', sans-serif;
+  font-family: \'Open Sans\', sans-serif;
 }
-header{
-  background-color: black;
+
+button {
+  margin: 0 auto;
+  display: block;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+footer {
+  color: #333;
   text-align: center;
-  padding: 20px;
-}
-
-header img {
-  transition: transform 0.3s ease;
-  border-radius: 25%;
+  background-color: black;
+  padding: 5px;
   box-sizing: border-box;
+  font-size: 14px;
+  line-height: 1.5;
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
 }
 
-header img:hover {
-  transform: scale(1.1);
+footer>a {
+  color: pink;
+  font: bold italic 30px verdana;
+  position: relative;
+  top: -18px;
 }
-nav {
-  display: flex;
-  margin-top: 20px;
-  justify-content: space-between;
+
+form {
+  flex-direction: column;
   align-items: center;
-  background-color: #AFFC41;
-  color: black;
-  padding: 10px;
 }
+
+h1 {
+  box-sizing: content-box;
+  padding: 5px;
+  color: #b2ff9e;
+  -webkit-text-stroke: #3c1642 1px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: black;
+  -webkit-text-stroke: #1dd3b0 1px;
+  text-align: center;
+  font-size: 25px;
+}
+
+header {
+  background-color: black;
+  padding: 2px;
+  font-weight: bold;
+}
+
+
+
+input[type=\"submit\"] {
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  margin-top: 20px;
+}
+
+input[type=\"text\"],
+input[type=\"email\"],
+input[type=\"password\"] {
+  font-size: 1.2rem;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  background-color: #1DD3B0;
+  color: #fff;
+  padding: 9px;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
-nav li {
-  margin: 0 10px;
+
+/* navigation menu styling  */
+nav {
+  display: flex;
+  margin: 10px 2px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  justify-content: space-between;
+  background-color: #AFFC41;
+  padding: 5px;
 }
-nav a {
-  color: black;
-  text-decoration: none;
-}
-nav a:hover {
-  background-color: #1DD3B0;
-  color: #fff;
-  padding: 10px;
-}
-h1 {
-  color: #b2ff9e;
-  -webkit-text-stroke: #3c1642 1px;
-  text-align: center;
-  font-size: 2.5rem;
-}
-h2 {
-  color: black;
-  -webkit-text-stroke: #1dd3b0 1px;
-  text-align: center;
-  font-size: 2rem;
-}
-h3 {
-  color: black;
-  -webkit-text-stroke: #1dd3b0 1px;
-  text-align: center;
-  font-size: 1.5rem;
-}
-h4 {
-  color: black;
-  -webkit-text-stroke: #1dd3b0 1px;
-  text-align: center;
-  font-size: 1.5rem;
-}
-h5 {
-  color: black;
-  -webkit-text-stroke: #1dd3b0 1px;
-  text-align: center;
-  font-size: 1.5rem;
-}
+
 p {
   text-align: center;
+  font: italic normal 19px arial;
   margin: 20px;
 }
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-label {
-  font-size:  1.2rem;
-  margin-top: 10px;
-}
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  font-size: 1.2rem;
-  padding: 5px;
-  margin-top: 10px;
-}
-input[type="submit"] {
-  font-size: 1.2rem;
-  padding: 5px 10px;
-  margin-top: 20px;
-}
-.fake-textarea {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 300px;
-  height: 100px;
-  border: 1px solid #666;
-  background-color: slategray;
-  color: white;
-  padding: 5px;
-  font-family:  monospace;
-  overflow: auto;
-  text-align: center;
-}
+
+/* new review box  */
 textarea {
   display: block;
   margin-left: auto;
@@ -127,16 +129,102 @@ textarea {
   margin-top: 5px;
   text-align: center;
 }
-footer {
-  color: #3C1642;
-  text-align: center;
-  background-color: #1DD3B0;
+
+.container h2 {
+  margin-top: 0;
+  color: #086375;
+}
+
+.container li {
+  margin-bottom: 10px;
+  padding-left: 2px;
+}
+
+.container p {
+  color: #333;
+}
+
+.container ul {
+  margin: 0;
+  padding: 5px;
+}
+
+/* Container Styling */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
   padding: 20px;
-}
-.profile-container {
+  background-color: lightslategrey;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
+
+.content-box p {
+  margin: ;
+}
+
+/* content box styling*/
+.content-box {
+  box-sizing: border-box;
+  margin: 50px 0 10px 10px;
+  display: flex;
+  background-color: lightpink;
+  color: lightseagreen;
+  text-align: center;
+}
+
+/* fixed-reviews username styling */
+.fake-textarea .name {
+  display: block;
+  position: relative;
+  top: 2px;
+  font-weight: bold;
+  text-align: center;
+  width: 200px;
+  height: 25px;
+  background-color: pink;
+  border-radius: 5%;
+  color: black;
+  padding: 4px;
+  margin: 5px 70px;
+}
+
+/* fixed-reviews styling  */
+.fake-textarea {
+  position: relative;
+  display: inline-block;
+  width: 350px;
+  height: 110px;
+  border: 2px solid #666;
+  background-color: slategray;
+  color: white;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  font-family: monospace;
+  overflow: auto;
+  text-align: center;
+}
+
+.image img {
+  transition: transform 0.3s ease;
+  border-radius: 25%;
+  box-sizing: border-box;
+}
+
+.image:hover img {
+  transform: scale(1.1);
+}
+
+.profile img {
+  width: 250px;
+  height: 150px;
+  margin-right: 10px;
+}
+
 .profile {
   display: flex;
   width: 500px;
@@ -144,19 +232,36 @@ footer {
   text-align: center;
   border: 2px solid lightgrey;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.profile img {
-  width: 250px;
-  height: 150px;
-  margin-right: 10px;
+
+.profile-container {
+  flex-wrap: wrap;
 }
+
 .profile-details {
   text-align: left;
 }
-button {
-  margin: 0 auto;
+
+#footerimage {
+  position: sticky;
+  left: 215px;
+  bottom: -150px;
   display: block;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  margin: auto;
+  width: auto;
+}
+
+#headerimage {
+  position: relative;
+  top: 15px;
+  left: 15px;
+  width: auto;
+  height: auto;
+}
+
+#questionarelink {
+  display: block;
+  background-color: pink;
+  font: bold normal 22px monospace;
 }
