@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <title>userpage</title>
+</head>
+
+<body>
+  <header>
+    <div class="image">
+      <a href="https://www.thehivearcade.com" target="_blanc"><img src="/images/hotpot.png" alt="wincwinclogo"
+          id="headerimage"></a>
+    </div>
+    <h1>Winc-Winc 😉 at you</h1>
+    <nav>
+      <ul>
+        <li><a href="/index.html">homepage</a></li>
+        <li><a href="/pages/user.html">user</a></li>
+        <li><a href="/pages/people.html">people</a></li>
+        <li><a href="/pages/reviews.html">review</a></li>
+        <li><a href="/pages/signup.html">sign up</a></li>
+        <li><a href="/pages/about.html">about us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <form onsubmit="formSubmitted()">
+    <h2>Questionnaire</h2>
+    <label for="name">What is your name?</label>
+    <input type="text" id="name" name="name" placeholder="name" required><br>
+
+    <label for="age">How old are you?</label>
+    <input type="number" id="age" name="age" placeholder="25" required><br>
+
+    <label for="email">What is your email address?</label>
+    <input type="email" id="email" name="email" placeholder="example@email.com" required><br>
+
+    <label for="favcolor">What is your favorite color?</label>
+    <select name="favcolor" id="favcolor">
+      option value="">--choice your favorite color</option>
+      <option value="red">red</option>
+      <option value="blue">blue</option>
+      <option value="green">green</option>
+      <option value="purple">purple</option>
+      <option value="yellow">yellow</option>
+      <option value="pink">pink</option>
+      <option value="orange">orange</option>
+      <option value="brown">brown</option>
+      <option value="cyan">cyan</option>
+      <option value="other">other</option>
+    </select><br>
+    <label for="interests">What are your interests?</label>
+    <fieldset>
+      <legend>Interests</legend>
+      <ul>
+        <li>
+          <label>Do you like to travel?</label>
+          <input type="radio" id="travel-yes" name="travel" value="yes">
+          <label for="travel-yes">Yes</label>
+          <input type="radio" id="travel-no" name="travel" value="no">
+          <label for="travel-no">No</label>
+        </li>
+        <li>
+          <label>Do you like to cook?</label>
+          <input type="radio" id="cook-yes" name="cook" value="yes">
+          <label for="cook-yes">Yes</label>
+          <input type="radio" id="cook-no" name="cook" value="no">
+          <label for="cook-no">No</label>
+        </li>
+        <li>
+          <label>Do you like animals?</label>
+          <input type="radio" id="animals-yes" name="animals" value="yes">
+          <label for="animals-yes">Yes</label>
+          <input type="radio" id="animals-no" name="animals" value="no">
+          <label for="animals-no">No</label>
+        </li>
+        <li>
+          <label>Do you like movies?</label>
+          <input type="radio" id="movies-yes" name="movies" value="yes">
+          <label for="movies-yes">Yes</label>
+          <input type="radio" id="movies-no" name="movies" value="no">
+          <label for="movies-no">No</label>
+        </li>
+        <li>
+          <label>Do you like walking?</label>
+          <input type="radio" id="walking-yes" name="walking" value="yes">
+          <label for="walking-yes">Yes</label>
+          <input type="radio" id="walking-no" name="walking" value="no">
+          <label for="walking-no">No</label>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <label>Looking for:</label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+          <input type="radio" id="nopreference" name="gender" value="No preference">
+          <label for="No preference">No preference</label>
+        </li>
+      </ul>
+    </fieldset>
+    <label>Extra details about you:</label>
+    <textarea rows="3" cols="30" placeholder="enter details if wanted here"></textarea>
+    <input type="submit" value="Submit"><br>
+  </form>
+  <footer>
+    <p>thanks for going with Winc-Winc we are here to guide you along the way!</p>
+    <a href="mailto:example@email.com">email us</a>
+    <div class="image">
+      <a href="https://www.thehivearcade.com" target="_blanc"><img src="/images/hotpot.png" alt="wincwinclogo"
+          id="footerimage"></a>
+    </div>
+  </footer>
+  <script src="/script.js"></script>
+</body>
+
+</html>
